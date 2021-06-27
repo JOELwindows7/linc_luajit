@@ -25,7 +25,12 @@
             <section unless='LINC_LUA_RELATIVE_DYNAMIC_LIB'>
                 <lib name='-lluajit-5.1' />
             </section>
-</section>
+        </section>
+        <section if="android">
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/arm/libluajit.so' if='HXCPP_ARMV7' />
+            <!-- <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/arm64/libluajit.so' if='HXCPP_ARM64' /> -->
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/x86/libluajit.so' if='HXCPP_X86' />
+        </section>
     </target>
 
 </xml>
