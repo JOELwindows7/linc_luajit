@@ -30,9 +30,12 @@
         </section>
         <section if="android">
             <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/arm/libluajit.so' if='HXCPP_ARMV7' />
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/arm/libluajit-5.1.so' if='HXCPP_ARMV7' />
             <!-- <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/arm64/libluajit.so' if='HXCPP_ARM64' /> -->
             <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/x86/libluajit.so' if='HXCPP_X86' />
-            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/Aarch64/libluajit.so' if='HXCPP_ARM64' />                    
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/x86/libluajit-5.1.so' if='HXCPP_X86' />
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/Aarch64/libluajit.so' if='HXCPP_ARM64' />
+            <lib name='${LINC_LUA_PATH}lib/Lua/lib/Android/Aarch64/libluajit-5.1.so' if='HXCPP_ARM64' />
         </section>
     </target>
 
